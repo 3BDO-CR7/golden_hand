@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Golden Hand",
+    "slug": "goldenHand",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aait.goldenhand",
+      "infoPlist": {
+        "NSCameraUsageDescription": "App need this permission to update profile photo.",
+        "NSPhotoLibraryAddUsageDescription": "App need this permission to update profile photo.",
+        "NSLocationWhenInUseUsageDescription": "App need this permission to determine your order location.",
+        "NSPhotoLibraryUsageDescription": "App need this permission to update profile photo."
+      }
+    },
+    "android": {
+      "package": "app.aait.goldenHand",
+      "versionCode": 13,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBQu-aDY--uY14s4U3ok-XwwqhsnhLFe5Q"
+        }
+      }
+    }
+  }
+}
