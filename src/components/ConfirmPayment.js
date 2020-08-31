@@ -56,7 +56,7 @@ class ConfirmPayment extends Component {
                 <Content  contentContainerStyle={styles.bgFullWidth} style={styles.bgFullWidth}>
 
                         <View style={[styles.overHidden, styles.marginVertical_25, styles.paddingHorizontal_20]}>
-                            <View style={[styles.overHidden, styles.SelfRight]}>
+                            <View style={[styles.overHidden, styles.SelfRight, styles.marginHorizontal_10]}>
                                 <Animatable.View animation="fadeInLeft" easing="ease-out" delay={500} style={[styles.flexCenter]}>
                                     <Image
                                         style       = {[styles.sizeImage , styles.flexCenter]}

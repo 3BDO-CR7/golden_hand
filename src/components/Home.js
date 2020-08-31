@@ -385,6 +385,19 @@ class Home extends Component {
                                                       numberOfLines = { 1 } prop with ellipsizeMode = "tail">
                                                     {provider_info.details}
                                                 </Text>
+                                                {
+                                                    provider_info.views !== null ?
+                                                        <View style={[ styles.rowRight, styles.position_R, { top : -10 } ]}>
+                                                            <Text style={[styles.textBold, styles.text_midBrown ,styles.textSize_12,]}>
+                                                                {i18n.t('views')} :
+                                                            </Text>
+                                                            <Text style={[styles.textBold, styles.text_midBrown ,styles.textSize_12]}>
+                                                                {provider_info.views}
+                                                            </Text>
+                                                        </View>
+                                                        :
+                                                        <View/>
+                                                }
                                                 <View style={[styles.locationView]}>
                                                     <Icon style={[styles.text_midBrown , styles.textSize_12 ,{marginRight:5}]} type="Feather" name='map-pin' />
                                                     <Text style={[styles.textRegular, styles.text_midBrown,styles.textSize_12, styles.width_150]}
